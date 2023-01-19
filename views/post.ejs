@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Article</title>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+        crossorigin="anonymous"
+    >
+</head>
+<body>
+    <h1>New Post</h1>
+    <form action=" " method="POST">
+        <div class="form-control">
+            <label for="title">Title</label>
+            <input required type="text" name="title" id="title" class="form-control">
+        </div>
+        <div class="form-control">
+            <textarea 
+                required
+                name="markdown" 
+                id="markdown" 
+                rows="25"
+                class="form-control" 
+                placeholder="Type your article here..."
+            ></textarea>
+        </div>
+        <a href="/" class="btn btn-secondary">Cancel</a>
+        <button type="submit" class="btn btn-success">Post</button>
+        
+    </form>
+    
+</body>
+</html>
